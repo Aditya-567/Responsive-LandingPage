@@ -1,0 +1,292 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body,
+html {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0069d9;
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+section {
+  padding: 40px 20px;
+  margin: 10px 0;
+  text-align: center;
+}
+.feature,
+.testimonial {
+  display: flex 1;
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-width: 400px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.header-text {
+  margin-left: 20px; /* Adjust the space between the image and the text */
+  text-align: left;
+}
+.header-title {
+  font-size: 55px;
+  font-weight: bold;
+}
+.header-description {
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+#call-to-action {
+  background: #007bff;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+#call-to-action button {
+  background: #0069d9;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #f8f9fa;
+}
+
+@media (min-width: 576px) {
+  header {
+    padding: 40px 15px;
+  }
+
+  section {
+    padding: 30px 15px;
+  }
+
+  .feature,
+  .testimonial {
+    max-width: 350px;
+  }
+
+  .header-title {
+    font-size: 45px;
+  }
+
+  .header-description {
+    font-size: 18px;
+  }
+
+  #call-to-action {
+    padding: 30px 15px;
+  }
+
+  #call-to-action button {
+    padding: 12px 25px;
+    font-size: 16px;
+  }
+
+  .course-title {
+    font-size: 40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .feature,
+  .testimonial {
+    width: 60%;
+  }
+
+  .courses-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .courses-content {
+    align-items: flex-start;
+    margin-right: 0; /* Remove space between image and boxes */
+  }
+
+  .courses-image {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 992px) {
+  header {
+    padding: 60px 30px;
+  }
+
+  section {
+    padding: 50px 30px;
+  }
+
+  .feature,
+  .testimonial {
+    max-width: 500px;
+  }
+
+  .header-title {
+    font-size: 60px;
+  }
+
+  .header-description {
+    font-size: 10px;
+  }
+
+  #call-to-action {
+    padding: 50px 30px;
+  }
+
+  #call-to-action button {
+    padding: 18px 35px;
+    font-size: 20px;
+  }
+
+  .course-title {
+    font-size: 55px;
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    padding: 70px 40px;
+  }
+
+  section {
+    padding: 60px 40px;
+  }
+
+  .feature,
+  .testimonial {
+    max-width: 600px;
+  }
+
+  .header-title {
+    font-size: 70px;
+  }
+
+  .header-description {
+    font-size: 24px;
+  }
+
+  #call-to-action {
+    padding: 60px 40px;
+  }
+
+  #call-to-action button {
+    padding: 20px 40px;
+    font-size: 22px;
+  }
+
+  .course-title {
+    font-size: 60px;
+  }
+}
+
+/* Center the heading */
+#testimonials h2 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px; /* Add some space below the heading */
+}
+
+/* Center the testimonial boxes and reduce space between them */
+#testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial-container {
+  display: flex;
+  justify-content: center;
+  gap: 3px; /* Space between the boxes */
+  width: 100%;
+}
+
+.testimonial {
+  width: 45%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 10px; /* Remove margin */
+  background-color: #fff;
+}
+
+/* Add this to your styles.css file */
+.styled-button {
+  padding: 12px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+.styled-button:hover {
+  background-color: #0056b3;
+}
+
+.courses-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.course-title {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+.courses-image {
+  margin-top: 20px;
+}
+
+.courses-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature {
+  margin-bottom: 10px; /* Decrease space between boxes */
+  width: 100%; /* Increase width of the boxes */
+  max-width: 500px; /* Adjust max-width as needed */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+  .courses-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+  }
+
+  .courses-content {
+    align-items: flex-start;
+    margin-right: 0; /* Remove space between image and boxes */
+  }
+
+  .courses-image {
+    margin-top: 0;
+  }
+}
